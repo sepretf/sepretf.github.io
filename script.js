@@ -30,6 +30,8 @@ $(document).ready(function() {
         id = Math.round(this.id / 10);
         else
         id = this.id;
+        if (id == 4)
+        id = 3;
         }
         else if (Math.round(this.id / 10) != id && id != 3 || id == 0 || id == 3 && Math.round(this.id / 10) < 3)
         alert("You can only play on one line ! Clic IA TURN  to pass.");
