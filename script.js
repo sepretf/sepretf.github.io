@@ -46,7 +46,7 @@ $(document).ready(function() {
         }
         i = 1;
         if (plat[0] == 0 && plat[1] == 0 && plat[2] == 0 && plat[3] == 0)
-        document.getElementById("all").innerHTML = "<center><img id=\"rest\" src=\"http://s2.quickmeme.com/img/73/73f18275d50705a6ea783ba30fc587fb51d444ca9dea508ded9f66e749d87a4c.jpg\" height=\"600\" width=\"600\"></center>";
+        document.getElementById("all").innerHTML = "<center><img id=\"rest\" onclick=\"document.location.reload();\" src=\"http://s2.quickmeme.com/img/73/73f18275d50705a6ea783ba30fc587fb51d444ca9dea508ded9f66e749d87a4c.jpg\" height=\"600\" width=\"600\"></center>";
     });
     
     $('next').click(function() {
@@ -73,11 +73,8 @@ $(document).ready(function() {
         i = 0;        
         
       if (plat[0] == 0 && plat[1] == 0 && plat[2] == 0 && plat[3] == 0)
-        document.getElementById("all").innerHTML = "<center><img id=\"rest\" src=\"http://data.whicdn.com/images/81311433/original.png\" height=\"600\" width=\"600\"></center>";
+        document.getElementById("all").innerHTML = "<center><img id=\"rest\" onclick=\"document.location.reload();\" src=\"http://data.whicdn.com/images/81311433/original.png\" height=\"600\" width=\"600\"></center>";
         }}
     });
     
-    $('#all').click(function() {
-        window.refresh();
-    });
 });
